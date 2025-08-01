@@ -1,0 +1,20 @@
+{
+  "name": "halleyx-coding-challenge",
+  "version": "1.0.0",
+  "description": "Full-stack application with customer and admin portals",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["full-stack", "react", "node", "express", "jwt"],
+  "author": "Halleyx Challenge",
+  "license": "MIT"
+}
